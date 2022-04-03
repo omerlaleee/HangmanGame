@@ -55,7 +55,7 @@ namespace _152120181039_HW2.Forms
             }
             predictDisplayer = new string(ch);
             button.Enabled = false;
-            lblWrongGuessCounter.Text = "Yanlış Tahmin Sayısı : " + Constant.counter.ToString();
+            lblWrongGuessCounter.Text = Constant.WrongGuessCount + Constant.counter.ToString();
             SituationOfTheMan(Constant.counter);
             return predictDisplayer;
         }

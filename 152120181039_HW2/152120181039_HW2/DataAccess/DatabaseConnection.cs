@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _152120181039_HW2.Constants;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -8,12 +9,11 @@ namespace _152120181039_HW2.DataAccess
 {
     public class DatabaseConnection
     {
-        string connectionString = @"Server=OMER;Database=HW2;Trusted_Connection=True";
         SqlConnection connection;
 
         public SqlConnection openConnection()
         {
-            connection = new SqlConnection(connectionString);
+            connection = new SqlConnection(Constant.ConnectionString);
             connection.Open();
             return connection;
         }

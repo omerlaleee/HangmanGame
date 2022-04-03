@@ -30,7 +30,7 @@ namespace _152120181039_HW2.Forms
         {
             if (txtBoxAddedWord.Text == "" || txtBoxHintOfAddedWord.Text == "")
             {
-                lblErrorMessage.Text = "Kelime eklemek için iki alanı da doldurmanız gerekir!";
+                lblErrorMessage.Text = Constant.BothFieldsNeedToBeFilledError;
             }
             else
             {
@@ -50,7 +50,7 @@ namespace _152120181039_HW2.Forms
             }
             else
             {
-                lblErrorMessage.Text = "Kelime silmek için soldaki listeden bir kelime seçiniz!";
+                lblErrorMessage.Text = Constant.ChooseADataToDeleteError;
             }
         }
 

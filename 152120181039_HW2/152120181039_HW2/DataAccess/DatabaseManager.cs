@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _152120181039_HW2.Constants;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -85,7 +86,7 @@ namespace _152120181039_HW2.DataAccess
             {
                 if (wordName == item)
                 {
-                    lblErrorMessage.Text = "Aynı kelimeyi bir daha ekleyemezsiniz!";
+                    lblErrorMessage.Text = Constant.SameWordError;
                     return;
                 }
             }
