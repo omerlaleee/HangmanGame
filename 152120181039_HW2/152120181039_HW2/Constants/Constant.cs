@@ -5,11 +5,14 @@ using System.Web;
 
 namespace _152120181039_HW2.Constants
 {
-    public static class Messages
+    public static class Constant
     {
-        // URL's
+        // URLs
         public static string HomeUrl = "Home.aspx";
         public static string GameFormUrl = "GameForm.aspx";
         public static string SettingsFormUrl = "SettingsForm.aspx";
+
+        // Global Variables
+        public static int counter = 0;
     }
 }

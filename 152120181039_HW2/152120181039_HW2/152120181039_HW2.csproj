@@ -70,10 +70,19 @@
     <Content Include="Forms\GameForm.aspx" />
     <Content Include="Forms\Home.aspx" />
     <Content Include="Forms\SettingsForm.aspx" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\6.png" />
+    <Content Include="Images\7.png" />
+    <Content Include="Images\8.png" />
+    <Content Include="Images\9.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Constants\Messages.cs" />
+    <Compile Include="Constants\Constant.cs" />
     <Compile Include="DataAccess\DatabaseConnection.cs" />
     <Compile Include="DataAccess\DatabaseManager.cs" />
     <Compile Include="Forms\GameForm.aspx.cs">

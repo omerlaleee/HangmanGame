@@ -23,7 +23,7 @@ namespace _152120181039_HW2.Forms
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Messages.HomeUrl);
+            Response.Redirect(Constant.HomeUrl);
         }
 
         protected void btnAdd_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace _152120181039_HW2.Forms
             else
             {
                 lblErrorMessage.Text = "";
-                databaseManager.Add(txtBoxAddedWord.Text, txtBoxHintOfAddedWord.Text);
+                databaseManager.Add(txtBoxAddedWord.Text.ToLower(), txtBoxHintOfAddedWord.Text, lblErrorMessage);
                 refreshListBox();
             }
         }
@@ -43,8 +43,15 @@ namespace _152120181039_HW2.Forms
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             lblErrorMessage.Text = "";
-            databaseManager.Delete(lstBoxWords.SelectedItem.Text);
-            refreshListBox();
+            if (lstBoxWords.SelectedItem != null)
+            {
+                databaseManager.Delete(lstBoxWords.SelectedItem.Text);
+                refreshListBox();
+            }
+            else
+            {
+                lblErrorMessage.Text = "Kelime silmek için soldaki listeden bir kelime seçiniz!";
+            }
         }
 
         public void refreshListBox()

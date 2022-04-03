@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
 
 namespace _152120181039_HW2.DataAccess
 {
@@ -55,8 +56,39 @@ namespace _152120181039_HW2.DataAccess
             return null;
         }
 
-        public void Add(string wordName, string hintName)
+        public string FindHintById(int id)
         {
+            List<int> allIdsOfWords = IdsOfWords();
+            List<string> allHints = new List<string>();
+            string commnadString = "Select * from Words";
+            SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
+            SqlDataReader dataReader = command.ExecuteReader();
+            while (dataReader.Read())
+            {
+                allHints.Add(dataReader.GetValue(2).ToString());
+            }
+            databaseConnection.closeConnection();
+            for (int i = 0; i < allIdsOfWords.Count; i++)
+            {
+                if (id == allIdsOfWords[i])
+                {
+                    return allHints[i];
+                }
+            }
+            return null;
+        }
+
+        public void Add(string wordName, string hintName, Label lblErrorMessage)
+        {
+            List<string> allWords = GetAll();
+            foreach (var item in allWords)
+            {
+                if (wordName == item)
+                {
+                    lblErrorMessage.Text = "Aynı kelimeyi bir daha ekleyemezsiniz!";
+                    return;
+                }
+            }
             databaseConnection.openConnection();
             String commnadString = "INSERT INTO Words (Word, Hint) Values (@wordName, @hintName)";
             SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());

@@ -17,12 +17,12 @@ namespace _152120181039_HW2.Forms
 
         protected void btnStartGame_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Messages.GameFormUrl);
+            Response.Redirect(Constant.GameFormUrl);
         }
 
         protected void btnSettings_Click(object sender, EventArgs e)
         {
-            Response.Redirect(Messages.SettingsFormUrl);
+            Response.Redirect(Constant.SettingsFormUrl);
         }
     }
 }
