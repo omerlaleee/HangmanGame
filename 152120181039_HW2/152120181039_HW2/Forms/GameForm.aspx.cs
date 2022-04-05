@@ -21,17 +21,23 @@ namespace _152120181039_HW2.Forms
                 int randomIdNumber = databaseManager.IdsOfWords()[randomNumber];
                 string randomWord = databaseManager.FindWordById(randomIdNumber);   //**
                 string hintOfRandomWord = databaseManager.FindHintById(randomIdNumber); //**
-                int lengthOfSelectedWord = randomWord.Length;
-                for (int i = 0; i < lengthOfSelectedWord; i++)
+                for (int i = 0; i < randomWord.Length; i++)
                 {
-                    lblPredictDisplayer.Text += "_ ";
+                    if (randomWord[i] == ' ')
+                    {
+                        lblPredictDisplayer.Text += "- ";
+                    }
+                    else
+                    {
+                        lblPredictDisplayer.Text += "_ ";
+                    }
                 }
                 lblRandomWord.Text = randomWord;
-                lblHintOfRandomWord.Text = hintOfRandomWord;
+                lblHintOfRandomWord.Text = "Hint : " + hintOfRandomWord;
             }
         }
 
-        protected void btnBack_Click(object sender, EventArgs e)
+        protected void btnBack_Click(object sender, ImageClickEventArgs e)
         {
             Constant.counter = 0;
             Response.Redirect(Constant.HomeUrl);
@@ -55,50 +61,86 @@ namespace _152120181039_HW2.Forms
             }
             predictDisplayer = new string(ch);
             button.Enabled = false;
-            lblWrongGuessCounter.Text = Constant.WrongGuessCount + Constant.counter.ToString();
             SituationOfTheMan(Constant.counter);
-            return predictDisplayer;
+            if (IsGameDone(predictDisplayer))
+            {
+                Response.Redirect(Constant.GameOverFormUrl + "?isGameDoneSuccessfully=true");
+            }
+            return predictDisplayer.ToUpper();
+        }
+
+        public bool IsGameDone(string predictDisplayer)
+        {
+            for (int i = 0; i < predictDisplayer.Length; i++)
+            {
+                if (predictDisplayer[i] == '_')
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         public void SituationOfTheMan(int wrongGuessCounter)
         {
             if (wrongGuessCounter == 1)
             {
+                img0.Visible = false;
                 img1.Visible = true;
             }
             else if (wrongGuessCounter == 2)
             {
+                img1.Visible = false;
                 img2.Visible = true;
             }
             else if (wrongGuessCounter == 3)
             {
+                img2.Visible = false;
                 img3.Visible = true;
             }
             else if (wrongGuessCounter == 4)
             {
+                img3.Visible = false;
                 img4.Visible = true;
             }
             else if (wrongGuessCounter == 5)
             {
+                img4.Visible = false;
                 img5.Visible = true;
             }
             else if (wrongGuessCounter == 6)
             {
+                img5.Visible = false;
                 img6.Visible = true;
             }
             else if (wrongGuessCounter == 7)
             {
+                img6.Visible = false;
                 img7.Visible = true;
             }
             else if (wrongGuessCounter == 8)
             {
+                img7.Visible = false;
                 img8.Visible = true;
             }
             else if (wrongGuessCounter == 9)
             {
+                img8.Visible = false;
                 img9.Visible = true;
                 Constant.counter = 0;
-                Response.Redirect(Constant.HomeUrl);
+                Response.Redirect(Constant.GameOverFormUrl + "?isGameDoneSuccessfully=false" + "&askedWord=" + lblRandomWord.Text);
+            }
+        }
+
+        protected void timer_Tick(object sender, EventArgs e)
+        {
+            string randomWord = lblRandomWord.Text;
+            int timer = Convert.ToInt32(lblTimer.Text);
+            timer += 1;
+            lblTimer.Text = timer.ToString();
+            if (timer == 30)
+            {
+                Response.Redirect(Constant.GameOverFormUrl + "?isGameDoneSuccessfully=false" + "&askedWord=" + randomWord);
             }
         }
 

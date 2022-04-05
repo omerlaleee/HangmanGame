@@ -18,8 +18,7 @@ namespace _152120181039_HW2.DataAccess
         public List<string> GetAll()
         {
             List<string> allWords = new List<string>();
-            string commnadString = "Select * from Words";
-            SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
+            SqlCommand command = new SqlCommand(Constant.GetAllFromDB, databaseConnection.openConnection());
             SqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
@@ -32,8 +31,7 @@ namespace _152120181039_HW2.DataAccess
         public List<int> IdsOfWords()
         {
             List<int> allIdsOfWords = new List<int>();
-            string commnadString = "Select * from Words";
-            SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
+            SqlCommand command = new SqlCommand(Constant.GetAllFromDB, databaseConnection.openConnection());
             SqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
@@ -47,7 +45,7 @@ namespace _152120181039_HW2.DataAccess
         {
             List<int> allIdsOfWords = IdsOfWords();
             List<string> allWords = GetAll();
-            for(int i = 0; i < allIdsOfWords.Count; i++)
+            for (int i = 0; i < allIdsOfWords.Count; i++)
             {
                 if (id == allIdsOfWords[i])
                 {
@@ -61,8 +59,7 @@ namespace _152120181039_HW2.DataAccess
         {
             List<int> allIdsOfWords = IdsOfWords();
             List<string> allHints = new List<string>();
-            string commnadString = "Select * from Words";
-            SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
+            SqlCommand command = new SqlCommand(Constant.GetAllFromDB, databaseConnection.openConnection());
             SqlDataReader dataReader = command.ExecuteReader();
             while (dataReader.Read())
             {
@@ -91,8 +88,7 @@ namespace _152120181039_HW2.DataAccess
                 }
             }
             databaseConnection.openConnection();
-            String commnadString = "INSERT INTO Words (Word, Hint) Values (@wordName, @hintName)";
-            SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
+            SqlCommand command = new SqlCommand(Constant.InsertDataToDB, databaseConnection.openConnection());
             command.Parameters.AddWithValue("@wordName", wordName);
             command.Parameters.AddWithValue("@hintName", hintName);
             command.ExecuteNonQuery();
@@ -102,7 +98,7 @@ namespace _152120181039_HW2.DataAccess
         public void Delete(string wordName)
         {
             databaseConnection.openConnection();
-            String commnadString = "Delete from Words where Word = '" + wordName + "'";
+            String commnadString = Constant.RemoveDataFromDB + wordName + "'";
             SqlCommand command = new SqlCommand(commnadString, databaseConnection.openConnection());
             command.ExecuteNonQuery();
             databaseConnection.closeConnection();

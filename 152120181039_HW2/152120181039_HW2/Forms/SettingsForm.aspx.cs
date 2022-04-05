@@ -21,12 +21,12 @@ namespace _152120181039_HW2.Forms
             }
         }
 
-        protected void btnBack_Click(object sender, EventArgs e)
+        protected void btnBack_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect(Constant.HomeUrl);
         }
 
-        protected void btnAdd_Click(object sender, EventArgs e)
+        protected void btnAdd_Click(object sender, ImageClickEventArgs e)
         {
             if (txtBoxAddedWord.Text == "" || txtBoxHintOfAddedWord.Text == "")
             {
@@ -40,7 +40,7 @@ namespace _152120181039_HW2.Forms
             }
         }
 
-        protected void btnDelete_Click(object sender, EventArgs e)
+        protected void btnDelete_Click(object sender, ImageClickEventArgs e)
         {
             lblErrorMessage.Text = "";
             if (lstBoxWords.SelectedItem != null)

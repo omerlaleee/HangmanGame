@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,17 +69,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Forms\GameForm.aspx" />
+    <Content Include="Forms\GameOverForm.aspx" />
     <Content Include="Forms\Home.aspx" />
     <Content Include="Forms\SettingsForm.aspx" />
-    <Content Include="Images\1.png" />
-    <Content Include="Images\2.png" />
-    <Content Include="Images\3.png" />
-    <Content Include="Images\4.png" />
-    <Content Include="Images\5.png" />
-    <Content Include="Images\6.png" />
-    <Content Include="Images\7.png" />
-    <Content Include="Images\8.png" />
-    <Content Include="Images\9.png" />
+    <Content Include="Images\Button Images\btnAdd.png" />
+    <Content Include="Images\Button Images\btnBack.png" />
+    <Content Include="Images\Button Images\btnDelete.png" />
+    <Content Include="Images\Button Images\btnHome.png" />
+    <Content Include="Images\Button Images\btnPlayAgain.png" />
+    <Content Include="Images\Button Images\btnSettings.png" />
+    <Content Include="Images\Button Images\btnStart.png" />
+    <Content Include="Images\Man Images\0.png" />
+    <Content Include="Images\Man Images\1.png" />
+    <Content Include="Images\Man Images\2.png" />
+    <Content Include="Images\Man Images\3.png" />
+    <Content Include="Images\Man Images\4.png" />
+    <Content Include="Images\Man Images\5.png" />
+    <Content Include="Images\Man Images\6.png" />
+    <Content Include="Images\Man Images\7.png" />
+    <Content Include="Images\Man Images\8.png" />
+    <Content Include="Images\Man Images\9.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +101,13 @@
     </Compile>
     <Compile Include="Forms\GameForm.aspx.designer.cs">
       <DependentUpon>GameForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameOverForm.aspx.cs">
+      <DependentUpon>GameOverForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\GameOverForm.aspx.designer.cs">
+      <DependentUpon>GameOverForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forms\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

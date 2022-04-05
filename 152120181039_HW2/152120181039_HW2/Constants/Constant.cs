@@ -7,24 +7,34 @@ namespace _152120181039_HW2.Constants
 {
     public static class Constant
     {
+        // Database Connection String
+        public static string ConnectionString = @"Server=OMER;Database=HW2;Trusted_Connection=True";
+
         // URLs
         public static string HomeUrl = "Home.aspx";
         public static string GameFormUrl = "GameForm.aspx";
         public static string SettingsFormUrl = "SettingsForm.aspx";
+        public static string GameOverFormUrl = "GameOverForm.aspx";
 
         // Global Variables
         public static int counter = 0;
+        public static int timer = 0;
 
         // Errors
-        public static string BothFieldsNeedToBeFilledError = "Kelime eklemek için iki alanı da doldurmanız gerekir!";
-        public static string ChooseADataToDeleteError = "Kelime silmek için soldaki listeden bir kelime seçiniz!";
-        public static string SameWordError = "Aynı kelimeyi bir daha ekleyemezsiniz!";
-        
-        // Informations
-        public static string WrongGuessCount = "Yanlış Tahmin Sayısı : ";
+        public static string BothFieldsNeedToBeFilledError = "You have to fill both textboxes to add new word!";
+        public static string ChooseADataToDeleteError = "Please select a word from the list to delete it!";
+        public static string SameWordError = "The word that you wanted to add is already exist in the database!";
 
-        // Database Connection String
-        public static string ConnectionString = @"Server=OMER;Database=HW2;Trusted_Connection=True";
+        // Informations
+        public static string WrongGuessCount = "Wrong Guess Count : ";
+        public static string GameDoneSuccessfully = "CONGRATULATIONS! YOU GUESSED THE WORD CORRECTLY...";
+        public static string GameDoneNotSuccessfully = "GAME OVER!!! THE WORD WAS : ";
+
+        // Database Query Strings
+        public static string GetAllFromDB = "Select * from Words";
+        public static string InsertDataToDB = "INSERT INTO Words (Word, Hint) Values (@wordName, @hintName)";
+        public static string RemoveDataFromDB = "Delete from Words where Word = '";
+
 
     }
 }

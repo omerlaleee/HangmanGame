@@ -15,14 +15,14 @@ namespace _152120181039_HW2.Forms
 
         }
 
-        protected void btnStartGame_Click(object sender, EventArgs e)
-        {
-            Response.Redirect(Constant.GameFormUrl);
-        }
-
         protected void btnSettings_Click(object sender, EventArgs e)
         {
             Response.Redirect(Constant.SettingsFormUrl);
+        }
+
+        protected void btnStartGame_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect(Constant.GameFormUrl);
         }
     }
 }

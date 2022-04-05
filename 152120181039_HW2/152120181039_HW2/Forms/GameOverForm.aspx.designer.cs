@@ -11,7 +11,7 @@ namespace _152120181039_HW2.Forms
 {
 
 
-    public partial class Home
+    public partial class GameOverForm
     {
 
         /// <summary>
@@ -24,30 +24,30 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblHangman control.
+        /// lblInfoAtTheEndOfGame control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHangman;
+        protected global::System.Web.UI.WebControls.Label lblInfoAtTheEndOfGame;
 
         /// <summary>
-        /// btnStartGame control.
+        /// btnPlayAgain control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnStartGame;
+        protected global::System.Web.UI.WebControls.ImageButton btnPlayAgain;
 
         /// <summary>
-        /// btnSettings control.
+        /// btnHomePage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnSettings;
+        protected global::System.Web.UI.WebControls.ImageButton btnHomePage;
     }
 }

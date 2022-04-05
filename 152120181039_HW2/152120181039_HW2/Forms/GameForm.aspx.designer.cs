@@ -24,6 +24,51 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// scriptManager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager scriptManager;
+
+        /// <summary>
+        /// timer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.Timer timer;
+
+        /// <summary>
+        /// TimedPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel TimedPanel;
+
+        /// <summary>
+        /// lblTimerText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTimerText;
+
+        /// <summary>
+        /// lblTimer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTimer;
+
+        /// <summary>
         /// lblPredictDisplayer control.
         /// </summary>
         /// <remarks>
@@ -312,6 +357,15 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.WebControls.Button btnZ;
 
         /// <summary>
+        /// img0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image img0;
+
+        /// <summary>
         /// img1 control.
         /// </summary>
         /// <remarks>
@@ -393,21 +447,12 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.WebControls.Image img9;
 
         /// <summary>
-        /// lblWrongGuessCounter control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblWrongGuessCounter;
-
-        /// <summary>
         /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBack;
+        protected global::System.Web.UI.WebControls.ImageButton btnBack;
     }
 }
