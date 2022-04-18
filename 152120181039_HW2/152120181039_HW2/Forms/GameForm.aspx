@@ -51,15 +51,12 @@
             <asp:Button ID="btnA" runat="server" OnClick="btnA_Click" Text="A" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnB" runat="server" OnClick="btnB_Click" Text="B" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnC" runat="server" OnClick="btnC_Click" Text="C" BackColor="#80FF00" Font-Bold="True" />
-            &nbsp;<asp:Button ID="btnÇ" runat="server" OnClick="btnÇ_Click" Text="Ç" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnD" runat="server" OnClick="btnD_Click" Text="D" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnE" runat="server" OnClick="btnE_Click" Text="E" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnF" runat="server" OnClick="btnF_Click" Text="F" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnG" runat="server" OnClick="btnG_Click" Text="G" BackColor="#80FF00" Font-Bold="True" />
-            &nbsp;<asp:Button ID="btnĞ" runat="server" OnClick="btnĞ_Click" Text="Ğ" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnH" runat="server" OnClick="btnH_Click" Text="H" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnI" runat="server" OnClick="btnI_Click" Text="I" BackColor="#80FF00" Font-Bold="True" />
-            &nbsp;<asp:Button ID="btnİ" runat="server" OnClick="btnİ_Click" Text="İ" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnJ" runat="server" OnClick="btnJ_Click" Text="J" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnK" runat="server" OnClick="btnK_Click" Text="K" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnL" runat="server" OnClick="btnL_Click" Text="L" BackColor="#80FF00" Font-Bold="True" />
@@ -70,10 +67,8 @@
             &nbsp;<asp:Button ID="btnP" runat="server" OnClick="btnP_Click" Text="P" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnR" runat="server" OnClick="btnR_Click" Text="R" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnS" runat="server" OnClick="btnS_Click" Text="S" BackColor="#80FF00" Font-Bold="True" />
-            &nbsp;<asp:Button ID="btnŞ" runat="server" OnClick="btnŞ_Click" Text="Ş" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnT" runat="server" OnClick="btnT_Click" Text="T" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnU" runat="server" OnClick="btnU_Click" Text="U" BackColor="#80FF00" Font-Bold="True" />
-            &nbsp;<asp:Button ID="btnÜ" runat="server" OnClick="btnÜ_Click" Text="Ü" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnV" runat="server" OnClick="btnV_Click" Text="V" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnY" runat="server" OnClick="btnY_Click" Text="Y" BackColor="#80FF00" Font-Bold="True" />
             &nbsp;<asp:Button ID="btnZ" runat="server" OnClick="btnZ_Click" Text="Z" BackColor="#80FF00" Font-Bold="True" />

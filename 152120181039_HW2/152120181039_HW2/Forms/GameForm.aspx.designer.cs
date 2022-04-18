@@ -123,15 +123,6 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.WebControls.Button btnC;
 
         /// <summary>
-        /// btnÇ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnÇ;
-
-        /// <summary>
         /// btnD control.
         /// </summary>
         /// <remarks>
@@ -168,15 +159,6 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.WebControls.Button btnG;
 
         /// <summary>
-        /// btnĞ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnĞ;
-
-        /// <summary>
         /// btnH control.
         /// </summary>
         /// <remarks>
@@ -193,15 +175,6 @@ namespace _152120181039_HW2.Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnI;
-
-        /// <summary>
-        /// btnİ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnİ;
 
         /// <summary>
         /// btnJ control.
@@ -294,15 +267,6 @@ namespace _152120181039_HW2.Forms
         protected global::System.Web.UI.WebControls.Button btnS;
 
         /// <summary>
-        /// btnŞ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnŞ;
-
-        /// <summary>
         /// btnT control.
         /// </summary>
         /// <remarks>
@@ -319,15 +283,6 @@ namespace _152120181039_HW2.Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnU;
-
-        /// <summary>
-        /// btnÜ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnÜ;
 
         /// <summary>
         /// btnV control.

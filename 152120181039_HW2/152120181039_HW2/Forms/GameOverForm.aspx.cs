@@ -18,9 +18,13 @@ namespace _152120181039_HW2.Forms
             {
                 lblInfoAtTheEndOfGame.Text = Constant.GameDoneSuccessfully;
             }
-            if (infoAtTheEndOfGame == "false")
+            else if (infoAtTheEndOfGame == "false")
             {
                 lblInfoAtTheEndOfGame.Text = Constant.GameDoneNotSuccessfully + askedWord.ToUpper();
+            }
+            else if(infoAtTheEndOfGame == "null")
+            {
+                lblInfoAtTheEndOfGame.Text = Constant.TimeIsOver + askedWord.ToUpper();
             }
         }
 

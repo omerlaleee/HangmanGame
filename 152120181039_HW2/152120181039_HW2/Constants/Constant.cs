@@ -29,6 +29,7 @@ namespace _152120181039_HW2.Constants
         public static string WrongGuessCount = "Wrong Guess Count : ";
         public static string GameDoneSuccessfully = "CONGRATULATIONS! YOU GUESSED THE WORD CORRECTLY...";
         public static string GameDoneNotSuccessfully = "GAME OVER!!! THE WORD WAS : ";
+        public static string TimeIsOver = "TIME IS UP! THE WORD WAS : ";
 
         // Database Query Strings
         public static string GetAllFromDB = "Select * from Words";

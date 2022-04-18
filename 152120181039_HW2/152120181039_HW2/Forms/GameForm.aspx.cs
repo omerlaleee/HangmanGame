@@ -140,7 +140,7 @@ namespace _152120181039_HW2.Forms
             lblTimer.Text = timer.ToString();
             if (timer == 30)
             {
-                Response.Redirect(Constant.GameOverFormUrl + "?isGameDoneSuccessfully=false" + "&askedWord=" + randomWord);
+                Response.Redirect(Constant.GameOverFormUrl + "?isGameDoneSuccessfully=null" + "&askedWord=" + randomWord);
             }
         }
 
@@ -156,11 +156,6 @@ namespace _152120181039_HW2.Forms
         protected void btnC_Click(object sender, EventArgs e)
         {
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnC);
-        }
-
-        protected void btnÇ_Click(object sender, EventArgs e)
-        {
-            lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnÇ);
         }
 
         protected void btnD_Click(object sender, EventArgs e)
@@ -183,11 +178,6 @@ namespace _152120181039_HW2.Forms
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnG);
         }
 
-        protected void btnĞ_Click(object sender, EventArgs e)
-        {
-            lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnĞ);
-        }
-
         protected void btnH_Click(object sender, EventArgs e)
         {
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnH);
@@ -196,11 +186,6 @@ namespace _152120181039_HW2.Forms
         protected void btnI_Click(object sender, EventArgs e)
         {
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnI);
-        }
-
-        protected void btnİ_Click(object sender, EventArgs e)
-        {
-            lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnİ);
         }
 
         protected void btnJ_Click(object sender, EventArgs e)
@@ -253,11 +238,6 @@ namespace _152120181039_HW2.Forms
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnS);
         }
 
-        protected void btnŞ_Click(object sender, EventArgs e)
-        {
-            lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnŞ);
-        }
-
         protected void btnT_Click(object sender, EventArgs e)
         {
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnT);
@@ -266,11 +246,6 @@ namespace _152120181039_HW2.Forms
         protected void btnU_Click(object sender, EventArgs e)
         {
             lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnU);
-        }
-
-        protected void btnÜ_Click(object sender, EventArgs e)
-        {
-            lblPredictDisplayer.Text = PlaceCharsInPredictDisplayer(lblRandomWord.Text, lblPredictDisplayer.Text, btnÜ);
         }
 
         protected void btnV_Click(object sender, EventArgs e)
